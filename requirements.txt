@@ -1,0 +1,5 @@
+click==7.1.2
+pathtools==0.1.2
+redis==3.5.3
+rq==1.6.1
+watchdog==0.10.3
