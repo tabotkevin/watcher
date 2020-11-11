@@ -9,9 +9,9 @@ from handler import FileEventHandler
 
 class FileWatcher:
 
-    def __init__(self, src_path):
+    def __init__(self, src_path, patterns):
         self._src_path = src_path
-        self._handler = FileEventHandler()
+        self._handler = FileEventHandler(patterns=patterns)
         self._observer = Observer()
 
     def run(self):

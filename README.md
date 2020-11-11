@@ -13,7 +13,8 @@ A simple application that demonstates how to use Watchdog, RQ and Redis to autom
 ## How to use project
     - $ cd watcher
     - $ source venv/bin/activate
-    - $ python run.py --path path/of/folder/to/watch e.g  python run.py --path /Users/crucifix/Desktop/watching.
+    - $ python run.py --path path/of/folder/to/watch --patterns comma seperated list of patterns  e.g  python run.py --path /Users/crucifix/Desktop/watching --patterns '.jpg, .pdf'.
+      * Both the --path and --patterns are optional parameters and they default to '.' and '*' respectively. '.' for current path and '*' to watch every file.
 
     * Open another terminal and run the following commands.
     - $ cd watcher
